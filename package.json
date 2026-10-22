@@ -1,0 +1,12 @@
+{
+  "name": "shopkart-storefront",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A full-stack demo shopping storefront",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
