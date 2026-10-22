@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1456d9" />
+    <meta name="description" content="Discover great deals on electronics, fashion and home essentials." />
+    <title>shopkart — Everything you love, for less</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-main page-wrap">
+        <a class="brand" href="/" aria-label="shopkart home">
+          <span class="brand-mark">s<span>k</span></span>
+          <span class="brand-word">shopkart<span class="brand-dot">.</span><small>Everything, happily.</small></span>
+        </a>
+        <form class="search-form" id="search-form" role="search">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="Search for products, brands and more..." aria-label="Search products" />
+          <button type="submit">Search</button>
+        </form>
+        <div class="header-actions">
+          <button class="account-button" type="button" id="account-button"><span class="action-icon">♙</span><span>Sign in</span></button>
+          <button class="cart-button" type="button" id="cart-button"><span class="action-icon">🛍</span><span>Cart</span><span class="cart-count" id="cart-count">0</span></button>
+        </div>
+      </div>
+      <nav class="category-nav" aria-label="Shop categories">
+        <div class="page-wrap category-nav-inner" id="category-nav">
+          <button class="category-link active" data-category="All">All deals</button>
+          <button class="category-link" data-category="Electronics">Electronics</button>
+          <button class="category-link" data-category="Fashion">Fashion</button>
+          <button class="category-link" data-category="Home">Home & living</button>
+          <span class="nav-spacer"></span>
+          <span class="delivery-note"><span>✦</span> Free delivery on orders over ₹999</span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero page-wrap">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> THE BIG GOOD THINGS SALE</span>
+          <h1>Little things.<br />Big <span>happy.</span></h1>
+          <p>Find your next favorite at prices worth smiling about.</p>
+          <button class="hero-cta" type="button" id="shop-now">Explore the deals <span>→</span></button>
+          <div class="hero-proof"><span class="proof-avatars">✿ &nbsp; ● &nbsp; ✦</span><span>Loved by <strong>20,000+</strong> happy shoppers</span></div>
+        </div>
+        <div class="hero-art" aria-label="Featured shopping deals">
+          <div class="hero-circle"></div>
+          <div class="hero-spark spark-one">✳</div><div class="hero-spark spark-two">✦</div>
+          <div class="hero-float-card float-top"><span>✨</span> Good finds, guaranteed</div>
+          <div class="hero-product hero-product-watch">⌚</div>
+          <div class="hero-product hero-product-bag">🛍️</div>
+          <div class="hero-product hero-product-headphones">🎧</div>
+          <div class="hero-sale-tag"><small>UP TO</small><strong>60%</strong><small>OFF</small></div>
+          <div class="hero-float-card float-bottom"><span class="rating-star">★</span> 4.9 <span class="muted">— the feel-good edit</span></div>
+        </div>
+        <div class="hero-index"><span class="index-active"></span><span></span><span></span></div>
+      </section>
+      <section class="benefits page-wrap" aria-label="Shopping benefits">
+        <div class="benefit"><span class="benefit-icon delivery-icon">↗</span><div><strong>Free, fast delivery</strong><span>On orders above ₹999</span></div></div>
+        <div class="benefit"><span class="benefit-icon return-icon">⟲</span><div><strong>Easy 7-day returns</strong><span>Shopping, minus the worry</span></div></div>
+        <div class="benefit"><span class="benefit-icon secure-icon">♡</span><div><strong>Payments you can trust</strong><span>100% secure checkout</span></div></div>
+        <div class="benefit"><span class="benefit-icon support-icon">✳</span><div><strong>Here when you need us</strong><span>Friendly help, always</span></div></div>
+      </section>
+      <section class="products-section page-wrap" id="products-section">
+        <div class="section-heading">
+          <div><span class="section-kicker">A LITTLE SOMETHING FOR EVERYONE</span><h2 id="section-title">Today's happy finds <span>✳</span></h2><p id="result-count">Handpicked picks at hard-to-resist prices.</p></div>
+          <label class="sort-control">Sort by <select id="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option></select></label>
+        </div>
+        <div id="product-grid" class="product-grid" aria-live="polite"><div class="loading-state">Finding the good stuff…</div></div>
+      </section>
+      <section class="newsletter page-wrap">
+        <div class="newsletter-mark">✉</div>
+        <div><span class="section-kicker">GOOD THINGS IN YOUR INBOX</span><h2>A little happy, delivered weekly.</h2><p>Fresh finds, lovely deals, and absolutely no spam.</p></div>
+        <form id="newsletter-form" class="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required /><button type="submit">Count me in <span>→</span></button></form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="page-wrap footer-inner"><a class="brand footer-brand" href="/"><span class="brand-mark">s<span>k</span></span><span class="brand-word">shopkart<span class="brand-dot">.</span><small>Everything, happily.</small></span></a><span>Good finds. Good feelings. © 2025 shopkart.</span><span class="footer-love">Made for your happy place <span>♥</span></span></div>
+    </footer>
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Your shopping cart" aria-hidden="true">
+      <div class="drawer-header"><div><span class="section-kicker">THE GOOD STUFF</span><h2>Your cart <span id="drawer-item-count">(0)</span></h2></div><button id="close-cart" class="close-button" aria-label="Close cart">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span>🛍️</span><h3>Your cart needs a little happy.</h3><p>Go find something you'll love.</p><button type="button" id="continue-shopping">Explore the finds →</button></div>
+      <div class="cart-footer" id="cart-footer">
+        <div class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div>
+        <p>Shipping calculated at checkout. Good choice, by the way.</p>
+        <button class="checkout-button" type="button" id="checkout-button">Checkout <span>→</span></button>
+        <span class="secure-note">♡ &nbsp; Safe and secure checkout</span>
+      </div>
+    </aside>
+    <dialog id="checkout-dialog" class="checkout-dialog">
+      <form id="checkout-form" method="dialog">
+        <div class="dialog-heading"><span class="section-kicker">ONE LAST LITTLE THING</span><button class="close-button" type="button" id="close-checkout" aria-label="Close checkout">×</button></div>
+        <h2>Make it yours.</h2><p>Where should we send all that happy?</p>
+        <label for="customer-name">Your name</label><input id="customer-name" name="customerName" maxlength="80" required placeholder="e.g. Alex Sharma" />
+        <div class="checkout-total"><span>Your total</span><strong id="checkout-total">₹0</strong></div>
+        <button class="checkout-button" type="submit">Place my order <span>→</span></button>
+        <p class="demo-note">Demo checkout — no payment will be collected.</p>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
